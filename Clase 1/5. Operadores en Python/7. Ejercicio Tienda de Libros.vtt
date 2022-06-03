@@ -1,0 +1,424 @@
+WEBVTT
+
+00:00.710 --> 00:02.490
+Hola bienvenidos a este ejercicio.
+
+00:02.490 --> 00:06.300
+A continuación vamos a crear el ejercicio de tienda de libros en Python.
+
+00:06.510 --> 00:07.420
+Están listos.
+
+00:07.440 --> 00:14.670
+Vamos bien lo primero que vamos a hacer es crear un nuevo archivo damos un enfile New File guardamos
+
+00:14.670 --> 00:23.060
+este archivo con controles de o Comaneci si estamos en Mac creamos el siguiente archivo tienda de medio
+
+00:23.170 --> 00:24.740
+libros punto.
+
+00:25.880 --> 00:31.550
+Guardamos el archivo y básicamente con ese ejercicio lo que vamos a hacer es agregar algunos otros tipos
+
+00:31.550 --> 00:34.280
+de datos que podemos manejar con Peyton.
+
+00:34.280 --> 00:39.650
+Esto lo vamos a hacer desde la entrada de datos si es posible o de lo contrario vamos a hacer una conversión
+
+00:39.650 --> 00:44.150
+de tipos una vez que el usuario haya introducido un dato solicitado.
+
+00:44.360 --> 00:50.240
+Así que lo que vamos a solicitar es que el USUARIO proporcione los datos de un libro por ejemplo el
+
+00:50.240 --> 00:56.840
+nombre del libro El Heydi el precio y también si tiene envío gratuito o no el libro así que vamos a
+
+00:56.840 --> 01:00.040
+hacer lo siguiente Vamos a solicitar al usuario lo siguiente
+
+01:02.780 --> 01:08.110
+Vamos a pedirle que proporcione los siguientes datos
+
+01:11.830 --> 01:16.720
+del libro y lo primero que vamos a hacer es solicitarle el nombre del libro.
+
+01:16.720 --> 01:25.510
+Lo vamos a asignar a una variable y le ponemos como comentario proporciona el nombre ya sabemos que
+
+01:25.510 --> 01:28.410
+hace referencia al nombre del libro.
+
+01:28.540 --> 01:34.270
+Posteriormente una vez que ya tenemos el nombre vamos a solicitarle el Heydi el Heydi va a ser de tipo
+
+01:34.270 --> 01:36.820
+entero así que también parte de este ejercicio.
+
+01:36.880 --> 01:42.220
+Lo importante es que ya recibamos el tipo de dato que necesitamos en la variable en este caso la variable
+
+01:42.280 --> 01:44.920
+Heydi así que va a ser de tipo entero.
+
+01:44.920 --> 01:51.370
+Por lo tanto el input lo vamos a procesar lo vamos a convertir a un entero así que primero envolvemos
+
+01:51.580 --> 01:55.520
+el input dentro de la función INT para convertirlo a un entero.
+
+01:55.600 --> 02:01.120
+Posteriormente solicitamos por medio de la función imput que proporcione
+
+02:04.790 --> 02:07.730
+el Heydi del libro.
+
+02:07.730 --> 02:12.020
+Sin embargo recordemos que si llega a proporcionar un valor distinto de entero entonces va a lanzar
+
+02:12.050 --> 02:12.730
+un error.
+
+02:12.800 --> 02:17.130
+De momento todavía no vamos a agregar el concepto de errores esto lo vamos a ver más adelante.
+
+02:17.270 --> 02:20.930
+Sin embargo en este ejercicio se debe de proporcionar un valor entero válido.
+
+02:20.990 --> 02:26.600
+De lo contrario va a arrojar un error bien como siguiente paso vamos a solicitar el precio del libro
+
+02:28.270 --> 02:32.950
+y en este caso el precio va a ser de tipo flotante ya que puede incluir puntos decimales.
+
+02:33.000 --> 02:38.150
+Por lo tanto en lugar de envolverlo en un tipo entero entonces lo vamos a convertir a un tipo float
+
+02:38.490 --> 02:44.490
+así que de manera muy similar a los tipos enteros vamos a utilizar ahora la función float y le solicitamos
+
+02:44.520 --> 02:45.210
+al usuario
+
+02:48.220 --> 02:51.770
+que proporcione el precio.
+
+02:51.770 --> 02:54.340
+El precio del libro bien.
+
+02:54.470 --> 02:59.920
+Y por último lo que vamos a hacer es que le vamos a preguntar al usuario si el libro incluye envío gratuito.
+
+02:59.940 --> 03:06.480
+Para ello vamos a definir una variable llamada envío gratuito entonces primero vamos a solicitar el
+
+03:06.480 --> 03:16.530
+tipo input que nos va a regresar un string indica si el envío es gratuito y el usuario debe de proporcionar
+
+03:16.560 --> 03:27.320
+el valor de tu o fouls ya que son los dos valores que podemos manejar con el tipo Juliano y una vez
+
+03:27.320 --> 03:32.690
+que ya tenemos el valor en nuestra variable envío gratuito es una string con el valor de Chú o fouls
+
+03:32.900 --> 03:45.450
+así que podemos preguntar si la variable envío gratuito es igual a la cadena tú entonces convertimos
+
+03:45.460 --> 03:52.470
+el valor a un tipo booleano así que ponemos dos puntos Enter para que nos dé el tabulador de manera
+
+03:52.470 --> 03:59.180
+automática y escribimos envío gratuito igual a tú.
+
+03:59.430 --> 04:04.940
+Así que en este momento esta variable ya almacena un valor de tipo Juliano de tipo vull.
+
+04:04.980 --> 04:09.810
+De lo contrario si no hacemos la conversión entonces esta variable de envío gratuito en este momento
+
+04:10.050 --> 04:15.750
+todavía está almacenando una variable de tipo string pero el objetivo del ejercicio es convertirlo al
+
+04:15.750 --> 04:17.580
+tipo que deseamos utilizar.
+
+04:17.640 --> 04:25.960
+En este caso al tipo Juliano y posteriormente podemos suponer que en caso de que no introduzca tú entonces
+
+04:25.960 --> 04:28.290
+el valor podría ser falso.
+
+04:28.330 --> 04:34.580
+Envío gratuito entonces tendría el valor de fouls.
+
+04:34.730 --> 04:40.370
+Sin embargo en este punto también el usuario podría proporcionar cualquier otro valor y entonces estaríamos
+
+04:40.370 --> 04:46.970
+entrando de manera automática al envío gratuito igual a fouls podemos dejarlo así o podemos asegurarnos
+
+04:47.150 --> 04:50.660
+que el usuario proporcione un valor válido para el caso de falso.
+
+04:50.660 --> 04:59.020
+Para esto podemos utilizar el IF que realmente se escribe el IF pero en otros lenguajes de programación
+
+04:59.080 --> 05:06.890
+esto se conoce como El IF y básicamente es otro caso aquí estamos preguntando si el envío gratuito es
+
+05:06.890 --> 05:12.230
+igual a otro y en caso de que el envío gratuito no sea igual a otro entonces vamos a preguntar ahora
+
+05:12.470 --> 05:22.030
+si el envío gratuito es igual a fouls a la cadena de fouls pero asegurándonos que realmente el usuario
+
+05:22.030 --> 05:23.950
+esté proporcionando este valor.
+
+05:23.950 --> 05:30.520
+Por ello estamos agregando esta opción de IF aunque como hemos comentado se escribe el IF así que es
+
+05:30.520 --> 05:35.360
+otro caso a validar y estamos preguntando entonces si no fue igual a Chú.
+
+05:35.380 --> 05:38.260
+Preguntamos si es igual a fouls si es igual a falso.
+
+05:38.440 --> 05:44.260
+Entonces la variable envío gratuito le asignamos el valor booleano de fouls pero en este momento esta
+
+05:44.260 --> 05:50.830
+variable ya es de tipo Juliano a diferencia como hemos comentado en este caso que es de tipo String.
+
+05:50.950 --> 06:02.930
+Y por último en cualquier otro caso utilizamos es dos puntos y entonces la variable envío gratuito le
+
+06:02.940 --> 06:08.090
+asignamos un mensaje valor incorrecto
+
+06:11.090 --> 06:19.360
+debe ser tú o Fool's bien y con eso ya tenemos todos los valores que necesitamos de nuestro libro.
+
+06:19.360 --> 06:24.880
+Estamos preguntando por el nombre en Heydi el precio que es el tipo flotante y el envío gratuito y lo
+
+06:24.880 --> 06:30.550
+estamos convirtiendo a un tipo Juliano en caso de que sea posible o lo estamos dejando como un string
+
+06:30.820 --> 06:36.100
+indicando de nueva cuenta al usuario que debe de proporcionar el valor de Chú o Foss para que se procese
+
+06:36.100 --> 06:38.160
+correctamente el programa.
+
+06:38.500 --> 06:42.610
+Y por último vamos a imprimir los valores de nuestro libro así que vamos a empezar a imprimir nuestras
+
+06:42.610 --> 06:43.240
+variables
+
+06:45.600 --> 06:47.340
+imprimimos el nombre del libro
+
+06:52.170 --> 07:02.910
+posteriormente imprimimos el Heydi con Koma concatenados el valor de la variable posteriormente el precio
+
+07:04.900 --> 07:06.270
+el cual ya es de tipo flotante.
+
+07:06.280 --> 07:12.400
+En este momento incluso ya podríamos hacer operaciones con ese valor debido a que es el tipo de dato
+
+07:12.400 --> 07:14.080
+requerido y por último
+
+07:17.080 --> 07:23.410
+imprimimos el valor de envío gratuito como si fuera una pregunta para saber si es verdadero el envío
+
+07:23.410 --> 07:24.660
+gratuito o no..
+
+07:24.670 --> 07:29.770
+Obviamente aquí podríamos convertirlo a un tipo cadena para que nos mandara el mensaje directamente
+
+07:29.980 --> 07:36.400
+de envío gratuito o no pero en este caso vamos a utilizar el tipo de dato Chú o Fool's ya es cuestión
+
+07:36.400 --> 07:41.230
+de ustedes si quieren convertirlo a una cadena dependiendo del valor que haya proporcionado el usuario
+
+07:41.860 --> 07:47.590
+pero sería algo muy similar a lo que ya estamos mostrando simplemente utilizar un IFF para preguntar
+
+07:47.590 --> 07:52.840
+si el envío gratuito es verdadero entonces asignar el valor de la cadena que deseemos.
+
+07:52.870 --> 07:57.700
+De lo contrario si es igual a falso entonces asignar el valor de la cadena también que deseamos mostrar
+
+07:58.420 --> 08:04.180
+pero en este caso únicamente vamos a mostrar la variable tal cual como lo hemos creado con el valor
+
+08:04.270 --> 08:05.110
+de tipo Juliano.
+
+08:05.110 --> 08:11.290
+En dado caso de que se haya podido asignar el valor de efforts o el valor de cadena valor incorrecto
+
+08:11.290 --> 08:18.060
+deben ser Chú o Foss así que hasta aquí ya tenemos todo nuestro programa vamos a ejecutarlo presionamos
+
+08:18.060 --> 08:26.340
+este botón de Herbón proporcionamos el nombre del libro cualquier nombre que deseemos por ejemplo programación
+
+08:26.850 --> 08:34.120
+con Peyton damos enter proporcionamos el Heydi y en este caso debemos de proporcionar un valor de tipo
+
+08:34.120 --> 08:34.750
+entero.
+
+08:34.750 --> 08:39.220
+De lo contrario nos va a arrojar un error y de momento todavía no estamos trabajando con el concepto
+
+08:39.460 --> 08:40.600
+de manejo de errores.
+
+08:40.660 --> 08:45.740
+Esto lo vamos a ver más adelante así que vamos a proporcionar cualquier valor entero por ejemplo 28
+
+08:45.740 --> 08:54.280
+28. 92 nueve damos enter proporcionamos el precio el cual puede incluir punto flotante por ejemplo 200
+
+08:54.280 --> 09:01.570
+.35 damos enter y ahora nos pregunta que indiquemos si el envío es gratuito y para ello debemos de proporcionar
+
+09:01.570 --> 09:03.370
+los valores de Chú o fouls.
+
+09:03.370 --> 09:08.680
+Por ejemplo proporcionamos cualquier otro valor por ejemplo en la cadena de no podemos observar que
+
+09:08.680 --> 09:15.190
+ya no se imprimen los valores del libro El nombre programación con Peyton el Heydi el precio y el momento
+
+09:15.190 --> 09:19.100
+de imprimir envío gratuito nos muestra en la cadena valor incorrecto.
+
+09:19.180 --> 09:24.730
+Debe de ser Chú o fouls y como nosotros proporcionamos el valor de no entonces nos muestra el mensaje
+
+09:24.730 --> 09:25.560
+de la cadena.
+
+09:25.660 --> 09:32.400
+Para el caso del ex vamos a volver a ejecutar nuestro programa pero vamos a hacer algunas pequeñas correcciones.
+
+09:32.400 --> 09:40.990
+Aquí ponemos dos puntos y aquí ponemos acento bien guardamos cambios y volvemos a ejecutar
+
+09:44.870 --> 09:46.940
+el número de libros programación con Peyton.
+
+09:47.080 --> 09:51.080
+El Heydi cualquier valor 7 8 7 8 9.
+
+09:51.260 --> 10:01.760
+El precio 200 .35 y vamos a indicar primero el valor de tu damos enter y podemos observar que ya tenemos
+
+10:02.090 --> 10:07.850
+el valor de Chuc pero ya en tipo Juliano ahora vamos a proporcionar el valor de falso volvemos a ejecutar
+
+10:07.850 --> 10:15.040
+el programa para volver a ejecutarlo simplemente presiona en la flecha hacia arriba de su teclado para
+
+10:15.040 --> 10:20.170
+que les vuelva a mostrar el nombre del programa en este caso la linea de Payton es el comando.
+
+10:20.170 --> 10:25.210
+Posteriormente en automático les muestra la ruta donde se encuentra el programa que acabamos de realizar.
+
+10:25.210 --> 10:32.150
+Tienda de libros punto aparte y al dar enter se vuelve a ejecutar el programa esa es una forma de ejecutarlo
+
+10:32.210 --> 10:38.420
+y la otra es volver a ejecutarlo presionando roncos o click derecho y Runco a cualquiera de estas opciones
+
+10:38.600 --> 10:44.850
+se puede volver a ejecutar el programa Bien proporcionamos el nombre del libro programación con Peyton
+
+10:45.990 --> 10:56.610
+proporcionamos una Erim 7 8 7 8 9 por ejemplo el precio 200 .35 damos enter e indicamos ahora si el
+
+10:56.610 --> 11:02.490
+envío es gratuito indicamos que no que es falso y podemos observar que ahora ya nos muestra también
+
+11:02.550 --> 11:05.850
+el valor de falso para el envio gratuito.
+
+11:05.850 --> 11:11.140
+Incluso podemos imprimir el tipo de dato de la variable envio gratuito.
+
+11:11.310 --> 11:16.170
+Recordemos que para saber el tipo de una variable podemos utilizar la función Time pero directamente
+
+11:16.170 --> 11:18.150
+aquí no nos va a mostrar el valor.
+
+11:18.300 --> 11:21.890
+Tenemos que imprimir el valor que arroja esta función.
+
+11:22.020 --> 11:29.070
+Por ejemplo si le preguntamos el tipo de la variable envío gratuito directamente no va a imprimir el
+
+11:29.070 --> 11:35.970
+valor tenemos que envolverlo dentro de la función print para que nos arroje el tipo de dato de la variable
+
+11:36.030 --> 11:41.730
+envío gratuito y así podemos preguntar por cualquier otra variable pero debemos de usar la función print
+
+11:41.970 --> 11:45.460
+para envolver el resultado que nos arroja esta función tipo de dato.
+
+11:45.530 --> 11:48.780
+Todo esto del tema de funciones lo vamos a ver a detalle posteriormente.
+
+11:48.780 --> 11:54.510
+De momento simplemente escriba en este código nos va a regresar el tipo de dato de la variable envío
+
+11:54.510 --> 11:56.610
+gratuito y lo estamos imprimiendo.
+
+11:56.610 --> 12:03.980
+Esto es lo que estamos haciendo en esta línea así que guardamos cambios ejecutamos recuerden que pueden
+
+12:03.980 --> 12:08.030
+presionar flecha hacia arriba les muestra la línea para ejecutar el programa.
+
+12:08.060 --> 12:15.260
+Dan enter y proporcionamos el nombre del libro y de igual manera programación con Peyton cualquier nombre
+
+12:15.260 --> 12:24.790
+del libro El Aydin 7 8 7 8 9 el precio 200 .35 e indicamos si el envío es gratuito cierto o falso.
+
+12:24.790 --> 12:30.880
+Damos enter y podemos observar que en este caso el envío gratuito fue igual a Chuck y podemos observar
+
+12:30.880 --> 12:37.030
+el tipo de dato de la variable envio gratuito que es de tipo Juliano así que con esto ya tenemos el
+
+12:37.030 --> 12:42.580
+tipo de dato de la variable que deseamos no solamente es un string sino ya es un tipo Juliano con el
+
+12:42.580 --> 12:48.680
+cual podemos trabajar y realizar otras operaciones o comprobaciones así que realicen este ejercicio
+
+12:48.880 --> 12:53.590
+y cualquier duda pueden ponerlo en el foro de preguntas y respuestas así que eso es todo por este vídeo
+
+12:53.760 --> 12:55.360
+y nos vemos en la siguiente elección.
+
+12:55.370 --> 12:55.930
+Saludos.
